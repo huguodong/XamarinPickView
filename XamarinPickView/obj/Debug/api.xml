@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="cn.jeesoft.widget.pickerview">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="cn.jeesoft.widget.pickerview.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" final="false" name="CharacterPickerView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharacterPickerView" static="false" type="cn.jeesoft.widget.pickerview.CharacterPickerView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CharacterPickerView" static="false" type="cn.jeesoft.widget.pickerview.CharacterPickerView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CharacterPickerView" static="false" type="cn.jeesoft.widget.pickerview.CharacterPickerView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentItems" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentItems" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCyclic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnOptionChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.CharacterPickerView.OnOptionChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.List&lt;java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CharacterPickerView.OnOptionChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onOptionChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.CharacterPickerView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.PopupWindow" extends-generic-aware="android.widget.PopupWindow" final="false" name="CharacterPickerWindow" static="false" visibility="public">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CharacterPickerWindow" static="false" type="cn.jeesoft.widget.pickerview.CharacterPickerWindow" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPickerView" native="false" return="cn.jeesoft.widget.pickerview.CharacterPickerView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCyclic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnoptionsSelectListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.CharacterPickerWindow.OnOptionsSelectListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.List&lt;java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectOptions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CharacterPickerWindow.OnOptionsSelectListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onOptionsSelect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LoopListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onItemSelect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="LoopRunnable" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="true" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.TimerTask" extends-generic-aware="java.util.TimerTask" final="true" name="LoopTimerTask" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="LoopView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LoopView" static="false" type="cn.jeesoft.widget.pickerview.LoopView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LoopView" static="false" type="cn.jeesoft.widget.pickerview.LoopView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LoopView" static="false" type="cn.jeesoft.widget.pickerview.LoopView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="b" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="b" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="c" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCurrentItem" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setArrayList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setCurrentItem" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setCyclic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.LoopListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setNotLoop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setTextSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.GestureDetector.SimpleOnGestureListener" extends-generic-aware="android.view.GestureDetector.SimpleOnGestureListener" final="true" name="LoopViewGestureListener" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="onDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onFling" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+<parameter name="p1" type="android.view.MotionEvent">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.TimerTask" extends-generic-aware="java.util.TimerTask" final="true" name="MTimer" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="MWheelOptions" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="MWheelOptions" static="false" type="cn.jeesoft.widget.pickerview.MWheelOptions" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.CharacterPickerView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentItems" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentItems" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCyclic" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnOptionChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.jeesoft.widget.pickerview.CharacterPickerView.OnOptionChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.List&lt;java.util.List&lt;java.util.List&lt;java.lang.String&gt;&gt;&gt;">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MWheelOptions.1" static="false" visibility="">
+<implements name="cn.jeesoft.widget.pickerview.LoopListener" name-generic-aware="cn.jeesoft.widget.pickerview.LoopListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemSelect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MWheelOptions.2" static="false" visibility="">
+<implements name="cn.jeesoft.widget.pickerview.LoopListener" name-generic-aware="cn.jeesoft.widget.pickerview.LoopListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemSelect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MWheelOptions.3" static="false" visibility="">
+<implements name="cn.jeesoft.widget.pickerview.LoopListener" name-generic-aware="cn.jeesoft.widget.pickerview.LoopListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemSelect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="true" name="MessageHandler" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="handleMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.TimerTask" extends-generic-aware="java.util.TimerTask" final="true" name="MyTimerTask" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R" static="false" type="cn.jeesoft.widget.pickerview.R" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.anim" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.anim" static="false" type="cn.jeesoft.widget.pickerview.R.anim" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_anim_enter_bottom" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_anim_exit_bottom" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.attr" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.attr" static="false" type="cn.jeesoft.widget.pickerview.R.attr" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.color" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.color" static="false" type="cn.jeesoft.widget.pickerview.R.color" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_wheel_timebtn_nor" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_wheel_timebtn_pre" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.drawable" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.drawable" static="false" type="cn.jeesoft.widget.pickerview.R.drawable" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_bg_above_timepicker" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_bg_line_timepicker" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_wheel_timebtn" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_wheel_val" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.id" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.id" static="false" type="cn.jeesoft.widget.pickerview.R.id" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_btnCancel" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_btnSubmit" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_layout1" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_layout2" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_layout3" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_options1" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_options2" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_options3" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_optionspicker" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.layout" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.layout" static="false" type="cn.jeesoft.widget.pickerview.R.layout" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_picker_dialog" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_picker_items" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.string" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.string" static="false" type="cn.jeesoft.widget.pickerview.R.string" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_pickerview_cancel" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="j_pickerview_submit" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.style" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.style" static="false" type="cn.jeesoft.widget.pickerview.R.style" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="j_timepopwindow_anim_style" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

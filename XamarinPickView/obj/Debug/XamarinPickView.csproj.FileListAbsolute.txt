@@ -1,0 +1,4 @@
+E:\xamarin\XamarinPickView\XamarinPickView\bin\Debug\XamarinPickView.dll
+E:\xamarin\XamarinPickView\XamarinPickView\bin\Debug\XamarinPickView.pdb
+E:\xamarin\XamarinPickView\XamarinPickView\obj\Debug\XamarinPickView.dll
+E:\xamarin\XamarinPickView\XamarinPickView\obj\Debug\XamarinPickView.pdb
